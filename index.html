@@ -1,3 +1,6 @@
+<php
+ 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,12 +207,12 @@
 <section class="contact" id="contact">
     <h2>Contact</h2>
     <div class="contact-container">
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+       <form action="contact_process.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" name="submit" class="btn">Send Message</button>
+</form>
         <div class="contact-info">
             <p>Email: mymnsaab0@gmail.com</p>
             <p>Phone: +92 3708433612</p>
